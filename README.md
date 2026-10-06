@@ -4,7 +4,7 @@
 
 4인 팀 GitHub 협업 실습용 Python 콘솔 미니 게임 허브입니다.
 
-> 강의자료의 5인 역할표(A~E)를 4인 팀에 맞게 조정했습니다.  
+> 강의자료의 5인 역할표(A~E)를 4인 팀에 맞게 조정했습니다.
 > **A(팀장)가 E 역할의 틱택토까지 겸임**하고, 나머지 역할/브랜치 이름은 강의자료를 그대로 따릅니다.
 
 ## 실행 방법
@@ -22,14 +22,12 @@ python main.py
 
 ## 5조 역할 분담
 
-| 역할 | GitHub ID | 담당 브랜치 | 담당 파일 / 업무 |
-|---|---|---|---|
-| A (팀장) | **pachir1su** | `feature/hub`, `feature/tictactoe` | `main.py`, `utils.py`, `README.md`, 저장소/병합 관리 + `games/tictactoe.py`, `tests/test_tictactoe.py` |
-| B | 팀원 2 | `feature/hangman` | `games/hangman.py`, `tests/test_hangman.py` |
-| C | 팀원 3 | `feature/baseball` | `games/baseball.py`, `tests/test_baseball.py` |
-| D | 팀원 4 | `feature/rps` | `games/rps.py`, `tests/test_rps.py` |
-
-팀원 GitHub ID가 정해지면 `팀원 2~4`를 실제 ID로 교체합니다.
+| 역할 | 이름 | GitHub ID | 담당 브랜치 | 담당 파일 / 업무 |
+|---|---|---|---|---|
+| A (팀장) | 팀장 | **pachir1su** | `feature/hub`, `feature/tictactoe` | `main.py`, `utils.py`, `README.md`, 저장소/병합 관리 + `games/tictactoe.py`, `tests/test_tictactoe.py` |
+| B | 김민건 | **skyblue-d2f7ff** | `feature/hangman` | `games/hangman.py`, `tests/test_hangman.py` |
+| C | 조하민 | **jhm829** | `feature/baseball` | `games/baseball.py`, `tests/test_baseball.py` |
+| D | 류혁주 | **edi0oa** | `feature/rps` | `games/rps.py`, `tests/test_rps.py` |
 
 ## 4인 팀 순환 리뷰
 
