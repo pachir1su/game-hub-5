@@ -49,7 +49,7 @@ python main.py
 |---|---|---|---|---|
 | 1 | 행맨 | B | `feature/hangman` | 🚧 |
 | 2 | 숫자 야구 | C | `feature/baseball` | 🚧 |
-| 3 | 가위바위보 | D | `feature/rps` | 🚧 |
+| 3 | 가위바위보 | D | `feature/rps` | ✅ 구현 완료 |
 | 4 | 틱택토 | A | `feature/tictactoe` | 🚧 |
 
 ## 협업 흐름
