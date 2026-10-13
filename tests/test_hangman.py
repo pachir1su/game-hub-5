@@ -1,4 +1,4 @@
-from games.hangman import mask_word, is_solved, WORDS, GAME_NAME
+from games.hangman import GAME_NAME, WORDS, is_solved, mask_word, play
 
 
 def test_mask_word_no_guesses():
@@ -11,6 +11,10 @@ def test_mask_word_correct_guesses():
 
 def test_mask_word_case_insensitive():
     assert mask_word("Apple", {"a", "P"}) == "App__"
+
+
+def test_mask_word_with_korean():
+    assert mask_word("apple", {"가", "a"}) == "a____"
 
 
 def test_is_solved_true():
@@ -31,3 +35,15 @@ def test_words_list_not_empty():
 
 def test_game_name():
     assert GAME_NAME == "행맨"
+
+
+def test_play_rejects_korean_input(monkeypatch, capsys):
+    monkeypatch.setattr("random.choice", lambda _: "cat")
+    answers = iter(["가", "c", "a", "t"])
+    monkeypatch.setattr("builtins.input", lambda _: next(answers))
+
+    play()
+
+    captured = capsys.readouterr().out
+    assert "알파벳 한 글자만 입력하세요." in captured
+    assert "축하합니다! 승리하셨습니다." in captured
