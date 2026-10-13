@@ -2,7 +2,7 @@
 
 # [충돌 실습 지점 1] 각 담당자는 자기 게임 import 줄의 주석을 해제합니다.
 # from games import hangman
-# from games import baseball
+from games import baseball
 from games import rps
 
 # from games import tictactoe
@@ -10,7 +10,7 @@ from games import rps
 # [충돌 실습 지점 2] 각 담당자는 자기 메뉴 줄의 주석을 해제합니다.
 GAMES = {
     # "1": hangman,
-    # "2": baseball,
+    "2": baseball,
     "3": rps,
     # "4": tictactoe,
 }
