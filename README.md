@@ -24,7 +24,7 @@ python main.py
 
 | 역할 | 이름 | GitHub ID | 담당 브랜치 | 담당 파일 / 업무 |
 |---|---|---|---|---|
-| A (팀장) | 팀장 | **pachir1su** | `feature/hub`, `feature/tictactoe` | `main.py`, `utils.py`, `README.md`, 저장소/병합 관리 + `games/tictactoe.py`, `tests/test_tictactoe.py` |
+| A (팀장) | 이건영 | **pachir1su** | `feature/hub`, `feature/tictactoe` | `main.py`, `utils.py`, `README.md`, 저장소/병합 관리 + `games/tictactoe.py`, `tests/test_tictactoe.py` |
 | B | 김민건 | **skyblue-d2f7ff** | `feature/hangman` | `games/hangman.py`, `tests/test_hangman.py` |
 | C | 조하민 | **jhm829** | `feature/baseball` | `games/baseball.py`, `tests/test_baseball.py` |
 | D | 류혁주 | **edi0oa** | `feature/rps` | `games/rps.py`, `tests/test_rps.py` |
@@ -50,7 +50,7 @@ python main.py
 | 1 | 행맨 | B | `feature/hangman` | 🚧 |
 | 2 | 숫자 야구 | C | `feature/baseball` | ✅ 구현 완료 |
 | 3 | 가위바위보 | D | `feature/rps` | ✅ 구현 완료 |
-| 4 | 틱택토 | A | `feature/tictactoe` | 🚧 |
+| 4 | 틱택토 | A | `feature/tictactoe` | ✅ 구현 완료 |
 
 ## 협업 흐름
 
