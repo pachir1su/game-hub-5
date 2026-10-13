@@ -48,7 +48,7 @@ python main.py
 | 번호 | 게임 | 담당 | 브랜치 | 상태 |
 |---|---|---|---|---|
 | 1 | 행맨 | B | `feature/hangman` | 🚧 |
-| 2 | 숫자 야구 | C | `feature/baseball` | 🚧 |
+| 2 | 숫자 야구 | C | `feature/baseball` | ✅ 구현 완료 |
 | 3 | 가위바위보 | D | `feature/rps` | ✅ 구현 완료 |
 | 4 | 틱택토 | A | `feature/tictactoe` | ✅ 구현 완료 |
 
