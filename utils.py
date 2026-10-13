@@ -22,3 +22,12 @@ def ask_yes_no(prompt: str) -> bool:
         if raw in ("n", "no"):
             return False
         print("y 또는 n으로 입력하세요.")
+
+
+def ask_choice(prompt: str, valid_choices: set[str]) -> str:
+    """허용된 선택지가 입력될 때까지 반복해서 묻는다."""
+    while True:
+        raw = input(prompt).strip()
+        if raw in valid_choices:
+            return raw
+        print("올바른 번호가 아닙니다.")
