@@ -58,7 +58,7 @@ def play() -> None:
 
         guess = input("한 글자를 추측하세요: ").strip().lower()
 
-        if len(guess) != 1 or not guess.isalpha():
+        if len(guess) != 1 or not (guess.isalpha() and guess.isascii()):
             print("알파벳 한 글자만 입력하세요.")
             continue
 
