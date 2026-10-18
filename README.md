@@ -47,7 +47,7 @@ python main.py
 
 | 번호 | 게임 | 담당 | 브랜치 | 상태 |
 |---|---|---|---|---|
-| 1 | 행맨 | B | `feature/hangman` | 🚧 |
+| 1 | 행맨 | B | `feature/hangman` | ✅ 구현 완료 |
 | 2 | 숫자 야구 | C | `feature/baseball` | ✅ 구현 완료 |
 | 3 | 가위바위보 | D | `feature/rps` | ✅ 구현 완료 |
 | 4 | 틱택토 | A | `feature/tictactoe` | ✅ 구현 완료 |
@@ -130,3 +130,14 @@ git push
 ```bash
 git merge --abort
 ```
+
+## 최종 확인 방법
+
+```bash
+python main.py
+pytest -q
+flake8 .
+```
+
+메뉴 1~4번으로 각 게임을 선택할 수 있습니다. 게임이 끝나면 허브 메뉴로 돌아옵니다.
+팀원별 실행 확인과 회고는 [실습 회고](docs/실습-회고.md)에 정리합니다.
