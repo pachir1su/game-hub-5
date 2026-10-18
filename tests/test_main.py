@@ -1,5 +1,9 @@
 """네 게임이 허브 메뉴에 연결됐는지 확인합니다."""
 
+from pathlib import Path
+import subprocess
+import sys
+
 import main
 
 
@@ -42,3 +46,19 @@ def test_menu_routes_all_games_and_exits(monkeypatch, capsys):
 
     assert called == ["1", "2", "3", "4"]
     assert "안녕히 가세요!" in capsys.readouterr().out
+
+
+def test_cli_starts_and_exits():
+    """실제 Python 프로세스로 허브를 실행한 뒤 종료한다."""
+    project_root = Path(__file__).resolve().parents[1]
+    result = subprocess.run(
+        [sys.executable, str(project_root / "main.py")],
+        input="0\n",
+        text=True,
+        capture_output=True,
+        check=True,
+        timeout=10,
+    )
+
+    assert "===== Game Hub =====" in result.stdout
+    assert "안녕히 가세요!" in result.stdout
